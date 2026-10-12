@@ -1,11 +1,19 @@
-.my-header {
+.header__body-inner {
   width: 100%;
   display: flex;
   align-items: center;
-  gap: 64px;
-  padding: 20px;
-  background-color: black;
+  gap: 16px;
+  padding: 16px 8px;
+  background-color: white;
   z-index: 100;
+
+  &.header__menu {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
   &.scrolled {
     position: fixed;
     top: 0;
