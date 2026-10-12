@@ -1,0 +1,83 @@
+.email-signup {
+  display: flex;
+
+  width: 100%;
+  max-width: 472px;
+
+  margin: 0 auto;
+
+  font-family: var(--font-1);
+  font-size: 16px;
+  line-height: 24px;
+
+  &__input {
+    flex: 1;
+    min-width: 0;
+
+    padding: 16px 32px;
+
+    font: inherit;
+
+    color: var(--accent);
+    background-color: #f9f9f9;
+
+    border: 0;
+    border-radius: 0;
+
+    &::placeholder {
+      color: var(--accent);
+      opacity: 0.2;
+    }
+
+    &:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: -2px;
+    }
+  }
+
+  &__button {
+    flex-shrink: 0;
+  }
+
+  @media screen and (max-width: 576px) {
+    &__input {
+      padding: 16px;
+    }
+
+    &__button {
+      padding: 16px 20px;
+    }
+  }
+}
+
+.email-signup--footer {
+  max-width: none;
+  margin: 0;
+
+  .email-signup__input {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.15);
+
+    &::placeholder {
+      color: #fff;
+      opacity: 1;
+    }
+
+    &:focus-visible {
+      outline-color: #fff;
+    }
+  }
+
+  .email-signup__button {
+    color: var(--accent);
+    background-color: #fff;
+
+    &:hover {
+      background-color: #ebe8f4;
+    }
+
+    &:focus-visible {
+      outline-color: #fff;
+    }
+  }
+}

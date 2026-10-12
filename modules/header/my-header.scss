@@ -1,24 +1,90 @@
-.header__body-inner {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  padding: 16px 8px;
-  background-color: white;
-  z-index: 100;
+.my-header {
+  background-color: #fff;
 
-  &.header__menu {
-    width: 100%;
-    display: flex;
+  &__top {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
     align-items: center;
-    justify-content: space-between;
+
+    min-height: 70px;
+
+    margin: 0 28px;
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   }
 
-  &.scrolled {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: #ffffff;
+  &__logo {
+    font-family: var(--font-2);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.25;
+
+    color: #22202e;
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 16px;
+  }
+
+  &__icon-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 24px;
+    height: 24px;
+    padding: 0;
+
+    color: var(--accent);
+    background-color: transparent;
+
+    cursor: pointer;
+
+    &:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 4px;
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 62px;
+    padding: 16px 20px;
+  }
+
+  &__menu {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 16px 44px;
+  }
+
+  &__menu-link {
+    font-family: var(--font-1);
+    font-size: 16px;
+    line-height: 1.5;
+
+    color: #726e8d;
+  }
+
+  @media screen and (max-width: 576px) {
+    &__top {
+      margin: 0 20px;
+    }
+
+    &__menu {
+      gap: 12px 20px;
+    }
+
+    &__menu-link {
+      font-size: 14px;
+    }
   }
 }

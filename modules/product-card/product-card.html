@@ -1,0 +1,17 @@
+<li class="product-card{{#if wide}} product-card--wide{{/if}}">
+    <img
+            class="product-card__img"
+            src="{{image}}"
+            alt="{{imageAlt}}"
+            width="{{#if wide}}630{{else}}305{{/if}}"
+            height="375"
+    />
+
+    <h3 class="product-card__title">
+        {{name}}
+    </h3>
+
+    <p class="product-card__price">
+        {{price}}
+    </p>
+</li>

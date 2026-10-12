@@ -1,40 +1,50 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Vite + SCSS</title>
-</head>
-<body>
-<header class="header">
-  <div class="header__promo">
-    <a href="/" class="header__promo-description">Avion</a>
-  </div>
-  <div class="header__body">
-    <div class="header__body-inner container">
-      <nav class="header__menu">
-        <li class="header__menu-item">
-          <a href="" class="header__menu-link">Plant pots</a>
-        </li>
-        <li class="header__menu-item">
-          <a href="" class="header__menu-link">Ceramics</a>
-        </li>
-        <li class="header__menu-item">
-          <a href="" class="header__menu-link">Tables</a>
-        </li>
-        <li class="header__menu-item">
-          <a href="" class="header__menu-link">Chairs</a>
-        </li>
-        <li class="header__menu-item">
-          <a href="" class="header__menu-link">Crockery</a>
-        </li>
-        <li class="header__menu-item">
-          <a href="" class="header__menu-link">Tableware</a>
-        </li>
-        <li class="header__menu-item">
-          <a href="" class="header__menu-link">Cutlery</a>
-        </li>
-      </nav>
+<header class="my-header">
+  <div class="my-header__top">
+    <button
+            class="my-header__icon-button"
+            type="button"
+            aria-label="Search"
+    >
+      <img src="/images/icons/search.svg" alt="" width="16" height="16" />
+    </button>
+
+    <a class="my-header__logo" href="/" aria-label="Avion homepage">
+      Avion
+    </a>
+
+    <div class="my-header__actions">
+      <button
+              class="my-header__icon-button"
+              type="button"
+              aria-label="Shopping cart"
+      >
+        <img
+                src="/images/icons/Shopping--cart.svg"
+                alt=""
+                width="16"
+                height="16"
+        />
+      </button>
+
+      <button
+              class="my-header__icon-button"
+              type="button"
+              aria-label="Account"
+      >
+        <img src="/images/icons/User--avatar.svg" alt="" width="16" height="16" />
+      </button>
     </div>
+  </div>
+
+  <div class="my-header__bottom">
+    <ul class="my-header__menu">
+      <li><span class="my-header__menu-link">Plant pots</span></li>
+      <li><span class="my-header__menu-link">Ceramics</span></li>
+      <li><span class="my-header__menu-link">Tables</span></li>
+      <li><span class="my-header__menu-link">Chairs</span></li>
+      <li><span class="my-header__menu-link">Crockery</span></li>
+      <li><span class="my-header__menu-link">Tableware</span></li>
+      <li><span class="my-header__menu-link">Cutlery</span></li>
+    </ul>
   </div>
 </header>

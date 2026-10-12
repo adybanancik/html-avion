@@ -1,0 +1,16 @@
+<div class="email-signup{{#if footer}} email-signup--footer{{/if}}">
+    <input
+            class="email-signup__input"
+            type="email"
+            placeholder="your@email.com"
+            aria-label="Email address"
+            readonly
+    />
+
+    <button
+            class="btn{{#unless footer}} btn--dark{{/unless}} email-signup__button"
+            type="button"
+    >
+        Sign up
+    </button>
+</div>

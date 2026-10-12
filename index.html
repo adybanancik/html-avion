@@ -1,3 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Avion — Furniture and homeware</title>
+</head>
+
+<body>
 {{> header/my-header }}
-{{> home/home-intro/home-intro }}
+
+<main>
+    {{> home/home-intro/home-intro }}
+    {{> home/home-benefits/home-benefits }}
+    {{> home/home-products/home-products }}
+    {{> home/home-popular/home-popular }}
+    {{> home/home-newsletter/home-newsletter }}
+    {{> home/home-about/home-about }}
+</main>
+
 {{> footer/my-footer }}
+
+<script type="module" src="/src/js/main.ts"></script>
+</body>
+</html>

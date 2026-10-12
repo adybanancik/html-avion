@@ -1,20 +1,55 @@
 .btn {
-  display: inline-block;
-  padding: 12px 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 16px 32px;
+
+  font-family: var(--font-1);
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 400;
+  line-height: 24px;
+
+  color: var(--accent);
+  background-color: #f9f9f9;
+
+  border: 0;
+  border-radius: 0;
+
+  cursor: pointer;
+
+  &:hover {
+    background-color: #ebe8f4;
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 4px;
+  }
+}
+
+.btn--hero {
+  color: #fff;
+  background-color: rgba(249, 249, 249, 0.15);
+
+  &:hover {
+    background-color: rgba(249, 249, 249, 0.25);
+  }
+
+  &:focus-visible {
+    outline-color: #fff;
+  }
+}
+
+.btn--dark {
   color: #fff;
   background-color: var(--accent);
-  border-radius: 4px;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
+
   &:hover {
-    background-color: var(--accent-hover);
+    background-color: #3b355e;
   }
-  &.btn--red {
-    background-color: var(--contrast);
-    &:hover {
-      background-color: var(--contrast-hover);
-    }
+
+  &:focus-visible {
+    outline-color: var(--accent);
   }
 }

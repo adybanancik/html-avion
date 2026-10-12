@@ -1,0 +1,43 @@
+<section class="home-products" aria-labelledby="home-products-title">
+    <div class="container">
+        <h2 class="home-products__title" id="home-products-title">
+            New ceramics
+        </h2>
+
+        <ul class="home-products__list">
+            {{> product-card/product-card
+            image="/images/home-page/chair.svg"
+            imageAlt="Dandy chair with a black seat and wooden legs"
+            name="The Dandy chair"
+            price="£250"
+            }}
+
+            {{> product-card/product-card
+            image="/images/home-page/vase.svg"
+            imageAlt="Three rustic ceramic vases on a plinth"
+            name="Rustic Vase Set"
+            price="£155"
+            }}
+
+            {{> product-card/product-card
+            image="/images/home-page/vase2.svg"
+            imageAlt="Tall pale ceramic vase"
+            name="The Silky Vase"
+            price="£125"
+            }}
+
+            {{> product-card/product-card
+            image="/images/home-page/lamp.svg"
+            imageAlt="Black pendant lamp against a turquoise background"
+            name="The Lucy Lamp"
+            price="£399"
+            }}
+        </ul>
+
+        <div class="home-products__footer">
+            <button class="btn" type="button">
+                View collection
+            </button>
+        </div>
+    </div>
+</section>

@@ -1,8 +1,78 @@
-@use "@/src/scss/blocks/fonts";
-@use "@/src/scss/blocks/base";
-@use "@/src/scss/blocks/variables";
-@use "@/modules/btn/btn";
 @use "@/modules/header/my-header";
-@use "@/modules/footer/my-footer";
-@use "@/modules/main-menu/main-menu";
+@use "@/modules/btn/btn";
+@use "@/modules/product-card/product-card";
+@use "@/modules/email-signup/email-signup";
+
 @use "@/modules/home/home-intro/home-intro";
+@use "@/modules/home/home-benefits/home-benefits";
+@use "@/modules/home/home-products/home-products";
+@use "@/modules/home/home-popular/home-popular";
+@use "@/modules/home/home-newsletter/home-newsletter";
+@use "@/modules/home/home-about/home-about";
+
+@use "@/modules/footer/my-footer";
+
+:root {
+  --accent: #2a254b;
+
+  --font-1: "Satoshi", sans-serif;
+  --font-2: "Clash Display", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+
+  font-family: var(--font-1);
+  font-size: 16px;
+  line-height: 1.5;
+
+  color: var(--accent);
+  background-color: #fff;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button {
+  border: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1320px;
+
+  margin: 0 auto;
+  padding: 0 20px;
+}
