@@ -1,0 +1,19 @@
+.about-service {
+  &__picture {
+    display: block;
+
+    min-width: 0;
+    height: 100%;
+  }
+
+  @media (max-width: 992px) {
+    &__picture {
+      height: auto;
+    }
+
+    .home-about__content {
+      min-height: 478px;
+      padding-bottom: 62px;
+    }
+  }
+}

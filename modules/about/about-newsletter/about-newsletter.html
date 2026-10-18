@@ -1,0 +1,70 @@
+<section
+        class="about-newsletter"
+        aria-labelledby="about-newsletter-title"
+>
+    <picture
+            class="about-newsletter__background"
+            aria-hidden="true"
+    >
+        <source
+                media="(max-width: 576px)"
+                srcset="/images/about-page/join.svg"
+        />
+
+        <img
+                src="/images/about-page/join.svg"
+                alt=""
+                width="1440"
+                height="444"
+                loading="lazy"
+        />
+    </picture>
+
+    <div class="about-newsletter__content">
+        <h2 id="about-newsletter-title">
+            Join the club and get the benefits
+        </h2>
+
+        <p class="about-newsletter__text">
+            Sign up for our newsletter and receive exclusive offers on new
+            ranges, sales, pop up stores and more
+        </p>
+
+        <ul class="about-newsletter__benefits">
+            <li>
+                <img
+                        src="/images/about-page/checkmark-filled.svg"
+                        alt=""
+                        width="16"
+                        height="16"
+                />
+
+                Exclusive offers
+            </li>
+
+            <li>
+                <img
+                        src="/images/about-page/checkmark-filled.svg"
+                        alt=""
+                        width="16"
+                        height="16"
+                />
+
+                Free events
+            </li>
+
+            <li>
+                <img
+                        src="/images/about-page/checkmark-filled.svg"
+                        alt=""
+                        width="16"
+                        height="16"
+                />
+
+                Large discounts
+            </li>
+        </ul>
+
+        {{> email-signup/email-signup }}
+    </div>
+</section>

@@ -1,4 +1,26 @@
-{{> header/my-header }}
-<h2 class="about">About</h2>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>About us — Avion</title>
+</head>
+
+<body class="about-page">
+{{> product/product-banner/product-banner }}
+{{> about/about-header/about-header }}
+
+<main>
+    {{> about/about-intro/about-intro }}
+    {{> home/home-about/home-about }}
+    {{> about/about-service/about-service }}
+    {{> home/home-benefits/home-benefits }}
+    {{> about/about-newsletter/about-newsletter }}
+</main>
+
 {{> footer/my-footer }}
-    
+
+<script type="module" src="/src/js/about.ts"></script>
+</body>
+</html>
