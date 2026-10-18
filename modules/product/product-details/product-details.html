@@ -1,0 +1,125 @@
+<section
+        class="product-details"
+        aria-labelledby="product-title"
+        data-product-details
+>
+    <img
+            class="product-details__image"
+            src="/images/product-page/dandy-chair.png"
+            alt="Black Dandy chair in a light grey room"
+            width="721"
+            height="759"
+            fetchpriority="high"
+    />
+
+    <div class="product-details__content">
+        <div class="product-details__heading">
+            <h1 class="product-details__title" id="product-title">
+                The Dandy Chair
+            </h1>
+
+            <p class="product-details__price">
+                £250
+            </p>
+        </div>
+
+        <div class="product-details__description">
+            <h2 class="product-details__label">
+        <span class="product-details__desktop">
+          Description
+        </span>
+
+                <span class="product-details__mobile">
+          Product description
+        </span>
+            </h2>
+
+            <p>
+                A timeless design, with premium materials features as one of our
+                most popular and iconic pieces. The dandy chair is perfect for any
+                stylish living space with beech legs and lambskin leather upholstery.
+            </p>
+
+            <ul class="product-details__features">
+                <li>Premium material</li>
+                <li>Handmade upholstery</li>
+                <li>Quality timeless classic</li>
+            </ul>
+        </div>
+
+        <div class="product-details__dimensions">
+            <h2 class="product-details__label">
+                Dimensions
+            </h2>
+
+            <dl class="product-details__measurements">
+                <div>
+                    <dt>Height</dt>
+                    <dd>110cm</dd>
+                </div>
+
+                <div>
+                    <dt>Width</dt>
+                    <dd>75cm</dd>
+                </div>
+
+                <div>
+                    <dt>Depth</dt>
+                    <dd>50cm</dd>
+                </div>
+            </dl>
+        </div>
+
+        <div class="product-details__actions">
+            <div class="product-details__quantity">
+        <span class="product-details__label" id="quantity-label">
+          <span class="product-details__desktop">
+            Amount:
+          </span>
+
+          <span class="product-details__mobile">
+            Quantity
+          </span>
+        </span>
+
+                <div
+                        class="product-details__stepper"
+                        role="group"
+                        aria-labelledby="quantity-label"
+                >
+                    <button
+                            type="button"
+                            aria-label="Decrease quantity"
+                            data-quantity-decrease
+                            disabled
+                    >
+                        −
+                    </button>
+
+                    <output
+                            aria-live="polite"
+                            aria-label="Quantity"
+                            data-quantity-value
+                    >
+                        1
+                    </output>
+
+                    <button
+                            type="button"
+                            aria-label="Increase quantity"
+                            data-quantity-increase
+                    >
+                        +
+                    </button>
+                </div>
+            </div>
+
+            <button
+                    class="btn btn--dark product-details__cart"
+                    type="button"
+            >
+                Add to cart
+            </button>
+        </div>
+    </div>
+</section>

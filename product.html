@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>The Dandy Chair — Avion</title>
+</head>
+
+<body class="product-page">
+{{> product/product-banner/product-banner }}
+{{> product/product-header/product-header }}
+
+<main>
+    {{> product/product-details/product-details }}
+    {{> product/product-recommendations/product-recommendations }}
+    {{> home/home-benefits/home-benefits }}
+    {{> home/home-newsletter/home-newsletter }}
+</main>
+
+{{> product/product-footer/product-footer }}
+
+<script type="module" src="/src/js/product.ts"></script>
+</body>
+</html>

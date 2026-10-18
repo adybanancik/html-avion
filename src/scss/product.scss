@@ -1,0 +1,91 @@
+@use "./blocks/fonts";
+@use "./style";
+
+@use "@/modules/product/product-banner/product-banner";
+@use "@/modules/product/product-header/product-header";
+@use "@/modules/product/product-details/product-details";
+@use "@/modules/product/product-recommendations/product-recommendations";
+@use "@/modules/product/product-footer/product-footer";
+
+.product-page {
+  --font-2: "Clashdisplay", sans-serif;
+
+  .home-benefits {
+    padding-bottom: 86px;
+  }
+
+  .home-benefits__title {
+    line-height: 1.4;
+  }
+
+  .home-newsletter > .container {
+    max-width: 1313px;
+  }
+
+  .home-newsletter__inner {
+    padding-bottom: 54px;
+  }
+
+  .home-newsletter__text {
+    line-height: 1.5;
+  }
+
+  @media (max-width: 576px) {
+    .container {
+      padding-inline: 24px;
+    }
+
+    .home-benefits {
+      padding: 48px 0;
+    }
+
+    .home-benefits__title {
+      max-width: 274px;
+      margin-bottom: 36px;
+
+      font-size: 20px;
+      text-align: left;
+    }
+
+    .home-benefits__list {
+      row-gap: 36px;
+    }
+
+    .home-benefits__item-title {
+      margin-bottom: 12px;
+      font-size: 16px;
+    }
+
+    .home-benefits__text {
+      max-width: none;
+      font-size: 14px;
+    }
+
+    .home-newsletter {
+      padding: 48px 0 38px;
+      background: #fff;
+    }
+
+    .home-newsletter__inner {
+      padding: 0;
+      text-align: left;
+    }
+
+    .home-newsletter__title {
+      font-size: 20px;
+    }
+
+    .home-newsletter__text {
+      margin-bottom: 42px;
+      font-size: 14px;
+    }
+
+    .email-signup__input {
+      padding-inline: 32px;
+    }
+
+    .email-signup__button {
+      padding-inline: 32px;
+    }
+  }
+}

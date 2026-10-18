@@ -1,0 +1,46 @@
+<section
+        class="home-products product-recommendations"
+        aria-labelledby="recommendations-title"
+>
+    <div class="container">
+        <h2 class="home-products__title" id="recommendations-title">
+            You might also like
+        </h2>
+
+        <ul class="home-products__list">
+            {{> product-card/product-card
+            image="/images/home-page/chair.svg"
+            imageAlt="Dandy chair with wooden legs"
+            name="The Dandy chair"
+            price="£250"
+            }}
+
+            {{> product-card/product-card
+            image="/images/home-page/vase.svg"
+            imageAlt="Rustic ceramic vase set"
+            name="Rustic Vase Set"
+            price="£155"
+            }}
+
+            {{> product-card/product-card
+            image="/images/home-page/vase2.svg"
+            imageAlt="Tall pale ceramic vase"
+            name="The Silky Vase"
+            price="£125"
+            }}
+
+            {{> product-card/product-card
+            image="/images/home-page/lamp.svg"
+            imageAlt="Pendant lamp against a turquoise background"
+            name="The Lucy Lamp"
+            price="£399"
+            }}
+        </ul>
+
+        <div class="home-products__footer">
+            <button class="btn" type="button">
+                View collection
+            </button>
+        </div>
+    </div>
+</section>
