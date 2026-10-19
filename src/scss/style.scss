@@ -1,3 +1,6 @@
+@use "./blocks/fonts";
+
+@use "./blocks/base";
 @use "@/modules/header/my-header";
 @use "@/modules/btn/btn";
 @use "@/modules/product-card/product-card";
@@ -15,9 +18,10 @@
 :root {
   --accent: #2a254b;
 
-  --font-1: "Satoshi", sans-serif;
-  --font-2: "Clash Display", sans-serif;
+  --font-1: "Clashdisplay", sans-serif;
+  --font-2: "Satoshi", sans-serif;
 }
+
 
 *,
 *::before,
