@@ -1,0 +1,91 @@
+<header class="my-header basket-header" data-basket-header>
+    <div class="my-header__top">
+        <button
+                class="my-header__icon-button basket-header__search"
+                type="button"
+                aria-label="Search"
+        >
+            <img
+                    src="/images/icons/search.svg"
+                    alt=""
+                    width="16"
+                    height="16"
+            />
+        </button>
+
+        <a
+                class="my-header__logo"
+                href="/"
+                aria-label="Avion homepage"
+        >
+            Avion
+        </a>
+
+        <div class="my-header__actions">
+            <a
+                    class="my-header__icon-button basket-header__cart"
+                    href="/basket.html"
+                    aria-label="Shopping cart"
+                    aria-current="page"
+            >
+                <img
+                        src="/images/icons/Shopping--cart.svg"
+                        alt=""
+                        width="16"
+                        height="16"
+                />
+            </a>
+
+            <button
+                    class="my-header__icon-button basket-header__account"
+                    type="button"
+                    aria-label="Account"
+            >
+                <img
+                        src="/images/icons/User--avatar.svg"
+                        alt=""
+                        width="16"
+                        height="16"
+                />
+            </button>
+
+            <button
+                    class="my-header__icon-button basket-header__toggle"
+                    type="button"
+                    aria-label="Toggle categories"
+                    aria-expanded="false"
+                    aria-controls="basket-navigation"
+                    data-basket-menu
+            >
+                <img
+                        src="/images/product-page/menu.svg"
+                        alt=""
+                        width="16"
+                        height="16"
+                />
+            </button>
+        </div>
+    </div>
+
+    <nav
+            class="my-header__bottom basket-header__nav"
+            id="basket-navigation"
+            aria-label="Product categories"
+    >
+        <ul class="my-header__menu">
+            <li><span class="my-header__menu-link">Plant pots</span></li>
+            <li><span class="my-header__menu-link">Ceramics</span></li>
+            <li><span class="my-header__menu-link">Tables</span></li>
+            <li><span class="my-header__menu-link">Chairs</span></li>
+            <li><span class="my-header__menu-link">Crockery</span></li>
+            <li><span class="my-header__menu-link">Tableware</span></li>
+            <li><span class="my-header__menu-link">Cutlery</span></li>
+
+            <li>
+                <a class="my-header__menu-link" href="/product.html">
+                    Product
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
