@@ -1,0 +1,146 @@
+.basket-item {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 260px 134px;
+  align-items: start;
+  gap: 20px;
+
+  &__product {
+    display: flex;
+    align-items: center;
+    gap: 21px;
+
+    min-width: 0;
+  }
+
+  &__image {
+    flex-shrink: 0;
+
+    width: 109px;
+    height: 134px;
+
+    object-fit: cover;
+  }
+
+  &__info {
+    min-width: 0;
+  }
+
+  &__title {
+    margin-bottom: 8px;
+
+    font: 400 20px / 1.4 var(--font-2);
+  }
+
+  &__description {
+    max-width: 180px;
+    margin-bottom: 8px;
+
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  &__price {
+    font-size: 16px;
+  }
+
+  &__quantity {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 122px;
+    min-height: 46px;
+    margin-top: 12px;
+    padding: 0 12px;
+
+    button {
+      width: 24px;
+      height: 44px;
+      padding: 0;
+
+      background: transparent;
+      color: var(--accent);
+
+      cursor: pointer;
+    }
+
+    button:disabled {
+      color: #ebe8f4;
+      cursor: default;
+    }
+
+    button:focus-visible {
+      outline: 2px solid var(--accent);
+    }
+
+    output {
+      min-width: 24px;
+      text-align: center;
+    }
+  }
+
+  &__total {
+    margin-top: 12px;
+
+    text-align: right;
+    font-size: 18px;
+  }
+
+  &__sr-only {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+
+  @media (max-width: 800px) {
+    grid-template-columns: clamp(88px, 34vw, 133px) minmax(0, 1fr);
+    grid-template-rows: auto 1fr;
+    gap: 16px 22px;
+
+    &__product {
+      display: contents;
+    }
+
+    &__image {
+      grid-column: 1;
+      grid-row: 1 / span 2;
+
+      width: 100%;
+      height: auto;
+
+      aspect-ratio: 133 / 166;
+    }
+
+    &__info {
+      grid-column: 2;
+      grid-row: 1;
+    }
+
+    &__title {
+      font-size: 16px;
+    }
+
+    &__description {
+      max-width: none;
+    }
+
+    &__quantity {
+      grid-column: 2;
+      grid-row: 2;
+
+      width: min(122px, 100%);
+      margin-top: 0;
+    }
+
+    &__total {
+      display: none;
+    }
+  }
+}

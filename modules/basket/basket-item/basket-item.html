@@ -1,0 +1,70 @@
+<li
+        class="basket-item"
+        data-basket-item
+        data-unit-price="{{unitPricePence}}"
+>
+    <div class="basket-item__product">
+        <img
+                class="basket-item__image"
+                src="{{image}}"
+                alt="{{imageAlt}}"
+                width="109"
+                height="134"
+        />
+
+        <div class="basket-item__info">
+            <h2 class="basket-item__title">
+                {{name}}
+            </h2>
+
+            <p class="basket-item__description">
+                {{description}}
+            </p>
+
+            <p class="basket-item__price">
+                {{price}}
+            </p>
+        </div>
+    </div>
+
+    <div
+            class="basket-item__quantity"
+            role="group"
+            aria-label="Quantity for {{name}}"
+    >
+        <button
+                type="button"
+                aria-label="Decrease quantity of {{name}}"
+                data-basket-decrease
+                disabled
+        >
+            −
+        </button>
+
+        <output
+                aria-label="Quantity of {{name}}"
+                aria-live="polite"
+                data-basket-quantity
+        >
+            1
+        </output>
+
+        <button
+                type="button"
+                aria-label="Increase quantity of {{name}}"
+                data-basket-increase
+        >
+            +
+        </button>
+    </div>
+
+    <p class="basket-item__total">
+    <span class="basket-item__sr-only">
+      Total for {{name}}:
+    </span>
+
+        <span data-basket-line-total>
+      {{price}}
+    </span>
+    </p>
+</li>
