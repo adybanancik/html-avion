@@ -1,0 +1,65 @@
+<section
+        class="shopping-basket"
+        aria-labelledby="basket-title"
+        data-basket
+>
+    <div class="shopping-basket__container">
+        <h1 class="shopping-basket__title" id="basket-title">
+            Your shopping cart
+        </h1>
+
+        <div class="shopping-basket__head" aria-hidden="true">
+            <span>Product</span>
+            <span>Quantity</span>
+            <span>Total</span>
+        </div>
+
+        <ul
+                class="shopping-basket__list"
+                aria-label="Products in your cart"
+        >
+            {{> basket/basket-item/basket-item
+            image="/images/home-page/vase2.svg"
+            imageAlt="Gray ceramic vase against a dark background"
+            name="Graystone vase"
+            description="A timeless ceramic vase with a tri color grey glaze."
+            price="£85"
+            unitPricePence=8500
+            }}
+
+            {{> basket/basket-item/basket-item
+            image="/images/basket-page/white-vase.png"
+            imageAlt="Green plant in a white ceramic pot"
+            name="Basic white vase"
+            description="Beautiful and simple this is one for the classics"
+            price="£125"
+            unitPricePence=12500
+            }}
+        </ul>
+
+        <div class="shopping-basket__summary">
+            <div class="shopping-basket__subtotal">
+                <span>Subtotal</span>
+
+                <output
+                        aria-label="Cart subtotal"
+                        aria-live="polite"
+                        data-basket-subtotal
+                >
+                    £210
+                </output>
+            </div>
+
+            <p class="shopping-basket__note">
+                Taxes and shipping are calculated at checkout
+            </p>
+
+            <button
+                    class="btn btn--dark shopping-basket__checkout"
+                    type="button"
+            >
+                Go to checkout
+            </button>
+        </div>
+    </div>
+</section>

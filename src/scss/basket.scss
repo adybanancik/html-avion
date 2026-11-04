@@ -1,0 +1,64 @@
+@use "./blocks/fonts";
+@use "./style";
+
+@use "@/modules/basket/basket-header/basket-header";
+@use "@/modules/basket/basket-item/basket-item";
+@use "@/modules/basket/shopping-basket/shopping-basket";
+
+.basket-page {
+  --font-2: "Clashdisplay", sans-serif;
+
+  @media (max-width: 576px) {
+    .my-footer > .container {
+      padding-inline: 24px;
+    }
+
+    .my-footer__top {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 40px 20px;
+
+      padding: 40px 0 26px;
+    }
+
+    .my-footer__column:nth-child(1) {
+      grid-column: 2;
+      grid-row: 1;
+    }
+
+    .my-footer__column:nth-child(2) {
+      grid-column: 1;
+      grid-row: 1;
+    }
+
+    .my-footer__column:nth-child(3) {
+      grid-column: 1 / -1;
+      grid-row: 2;
+    }
+
+    .my-footer__signup {
+      grid-column: 1 / -1;
+      grid-row: 3;
+    }
+
+    .my-footer__title {
+      line-height: 1.25;
+    }
+
+    .my-footer__list {
+      line-height: 18px;
+    }
+
+    .my-footer__signup .my-footer__title {
+      margin-bottom: 16px;
+    }
+
+    .my-footer__bottom {
+      align-items: center;
+      padding: 19px 0;
+    }
+
+    .my-footer__socials {
+      display: none;
+    }
+  }
+}
