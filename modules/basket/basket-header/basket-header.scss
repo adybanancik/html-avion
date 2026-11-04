@@ -1,0 +1,48 @@
+.basket-header {
+  &__toggle {
+    display: none;
+  }
+
+  @media (max-width: 576px) {
+    .my-header__top {
+      display: flex;
+
+      min-height: 69px;
+      margin: 0;
+      padding: 0 24px;
+
+      border: 0;
+    }
+
+    .my-header__logo {
+      order: 0;
+      margin-right: auto;
+    }
+
+    &__search {
+      order: 1;
+      margin-right: 12px;
+    }
+
+    .my-header__actions {
+      order: 2;
+    }
+
+    &__cart,
+    &__account {
+      display: none;
+    }
+
+    &__toggle {
+      display: inline-flex;
+    }
+
+    &__nav {
+      display: none;
+    }
+
+    &.is-menu-open &__nav {
+      display: block;
+    }
+  }
+}
